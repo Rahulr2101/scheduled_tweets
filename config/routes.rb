@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get "about", to: "about#index"
-
+  get "password", to: "passwords#edit"
+  patch "password", to: "passwords#update"
   get "sign_in", to: "session#index"
   post "sign_in", to: "session#create"
   get "sign_up", to: "registration#new"
